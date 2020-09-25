@@ -5,6 +5,9 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @comments = Comment.new
+    @comments.article_id = @article.id
+
   end
 
 
@@ -44,7 +47,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:id, :title, :body, :author, :created_at, :updated_at, :notice)
+    params.require(:article).permit(:id, :title, :body, :author, :created_at, :updated_at, :notice, :comments, :article_id)
   end
 
 end

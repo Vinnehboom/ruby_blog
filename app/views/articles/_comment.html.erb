@@ -1,0 +1,7 @@
+<div>
+  <p class="card-subtitle text-secondary">Comment by <%= comment.author_name %></p>
+  <p class="comment"><%= comment.body %></p>
+  <p class="text-muted small">Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</p>
+
+  <hr class="w-25 mx-auto">
+</div>

@@ -1,0 +1,18 @@
+<h5>Post a comment</h5>
+<div class="form-group justify-content-around">
+<%= form_for [@article, @comments] do |f| %>
+  <p class="form-group-text">
+    <%= f.label :author_name, 'Your name' %><br/>
+    <%= f.text_field :author_name %>
+  </p>
+  <div class="form-group-text">
+    <%= f.label :body, 'Comment' %><br/>
+    <p class="">
+    <%= f.text_area :body %>
+    </p>
+  </div>
+  <p class="button">
+    <%= f.submit 'Submit' %>
+  </p>
+    </div>
+<% end %>
