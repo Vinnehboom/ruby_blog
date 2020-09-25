@@ -1,0 +1,14 @@
+<h1 class="mx-auto">All articles</h1>
+<p id="notice"><%= notice %></p>
+<div class="container w-100">
+<div class="row">
+  <%= render @article %>
+</div>
+</div>
+<div>
+  <h2>Options</h2>
+  <ul>
+    <li><%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+    </li>
+  </ul>
+</div>

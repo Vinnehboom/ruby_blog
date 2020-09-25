@@ -1,0 +1,8 @@
+<div class="card col col-md-4">
+  <div class="card-body">
+  <div class="card-title"><%= link_to "#{article.title}", article_path("#{article.id}") %></div>
+  <p class="card-text"><%= "#{article.body}" %></p>
+    <small><%= "#{article.created_at}" %></small>
+</div>
+</div>
+

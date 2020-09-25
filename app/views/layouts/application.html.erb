@@ -9,7 +9,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="w-100">
+  <p class="flash"><%= flash.notice %></p>
+  <%= yield %>
   </body>
 </html>
